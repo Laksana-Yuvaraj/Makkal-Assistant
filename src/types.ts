@@ -77,8 +77,8 @@ export interface UserSession {
 
 export const TRANSLATIONS = {
   en: {
-    appName: "Civic Water Assistant",
-    tagline: "Voice & Icon Guided Civic Reporter",
+    appName: "Makkal Assistant",
+    tagline: "People's Civic & Grievance Assistant",
     languageSelect: "Choose Your Language",
     hindi: "हिन्दी",
     tamil: "தமிழ்",
@@ -224,11 +224,17 @@ export const TRANSLATIONS = {
     autoVoiceReadback: "Auto Voice Readback",
     voiceReadbackOn: "Voice Readback: ON",
     voiceReadbackOff: "Voice Readback: OFF",
-    testVoice: "Test Assistant Voice"
+    testVoice: "Test Assistant Voice",
+    shareComplaint: "Share Status",
+    shareWithCommunity: "Share with Ward & Community",
+    shareDesc: "Share this official complaint link with your resident welfare association, ward councillor, or neighbors to accelerate action.",
+    shareViaWhatsApp: "Share on WhatsApp",
+    copyLink: "Copy Status Link",
+    linkCopied: "Complaint status link copied to clipboard!"
   },
   hi: {
-    appName: "नागरिक जल सहायक",
-    tagline: "आवाज और आइकन आधारित नागरिक रिपोर्टर",
+    appName: "मक्कल असिस्टेंट (Makkal Assistant)",
+    tagline: "जनता की आवाज़ और नागरिक सहायता",
     languageSelect: "अपनी भाषा चुनें",
     hindi: "हिन्दी",
     tamil: "தமிழ்",
@@ -374,11 +380,17 @@ export const TRANSLATIONS = {
     autoVoiceReadback: "ऑटो वॉयस रीडबैक",
     voiceReadbackOn: "वॉयस रीडबैक: चालू",
     voiceReadbackOff: "वॉयस रीडबैक: बंद",
-    testVoice: "सहायक आवाज का परीक्षण करें"
+    testVoice: "सहायक आवाज का परीक्षण करें",
+    shareComplaint: "स्थिति साझा करें",
+    shareWithCommunity: "वार्ड प्रतिनिधि और समुदाय से साझा करें",
+    shareDesc: "त्वरित समाधान हेतु इस आधिकारिक शिकायत लिंक को अपने रेजिडेंट ग्रुप, वार्ड पार्षद या पड़ोसियों से साझा करें।",
+    shareViaWhatsApp: "व्हाट्सएप पर साझा करें",
+    copyLink: "स्थिति लिंक कॉपी करें",
+    linkCopied: "शिकायत लिंक क्लिपबोर्ड पर कॉपी किया गया!"
   },
   ta: {
-    appName: "குடிநீர் புகார் உதவி",
-    tagline: "குரல் & சின்னம் வழிகாட்டும் குடிமை புகாரளிப்பாளர்",
+    appName: "மக்கள் அசிஸ்டண்ட் (Makkal Assistant)",
+    tagline: "மக்கள் குறைதீர்ப்பு மற்றும் குடிமை உதவி",
     languageSelect: "உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்",
     hindi: "हिन्दी",
     tamil: "தமிழ்",
@@ -524,11 +536,17 @@ export const TRANSLATIONS = {
     autoVoiceReadback: "தானியங்கி குரல் வாசிப்பு",
     voiceReadbackOn: "குரல் வாசிப்பு: ஆன்",
     voiceReadbackOff: "குரல் வாசிப்பு: ஆஃப்",
-    testVoice: "உதவியாளர் குரலை சோதிக்கவும்"
+    testVoice: "உதவியாளர் குரலை சோதிக்கவும்",
+    shareComplaint: "நிலையைப் பகிரவும்",
+    shareWithCommunity: "வார்டு பிரதிநிதி மற்றும் குழுவில் பகிரவும்",
+    shareDesc: "விரைவான தீர்வுக்கு இந்த அதிகாரபூர்வ புகார் இணைப்பை உங்கள் குடியிருப்போர் சங்கம், வார்டு கவுன்சிலர் அல்லது அக்கம்பக்கத்தினருடன் பகிரவும்.",
+    shareViaWhatsApp: "வாட்ஸ்அப்பில் பகிரவும்",
+    copyLink: "நிலை இணைப்பை நகலெடுக்கவும்",
+    linkCopied: "புகார் நிலை இணைப்பு கிளிப்போர்டில் நகலெடுக்கப்பட்டது!"
   },
   te: {
-    appName: "పౌర నీటి సహాయకుడు",
-    tagline: "వాయిస్ & ఐకాన్ గైడెడ్ సివిక్ రిపోర్టర్",
+    appName: "మక్కల్ అసిస్టెంట్ (Makkal Assistant)",
+    tagline: "ప్రజా సమస్యల పరిష్కార సహాయకుడు",
     languageSelect: "మీ భాషను ఎంచుకోండి",
     hindi: "हिन्दी",
     tamil: "தமிழ்",
@@ -674,6 +692,12 @@ export const TRANSLATIONS = {
     autoVoiceReadback: "ఆటో వాయిస్ రీడ్‌బ్యాక్",
     voiceReadbackOn: "వాయిస్ రీడ్‌బ్యాక్: ఆన్",
     voiceReadbackOff: "వాయిస్ రీడ్‌బ్యాక్: ఆఫ్",
-    testVoice: "సహాయక వాయిస్‌ని పరీక్షించండి"
+    testVoice: "సహాయక వాయిస్‌ని పరీక్షించండి",
+    shareComplaint: "స్థితిని పంచుకోండి",
+    shareWithCommunity: "వార్డు ప్రతినిధి మరియు సమూహంతో పంచుకోండి",
+    shareDesc: "త్వరిత పరిష్కారం కోసం ఈ అధికారిక ఫిర్యాదు లింక్‌ను మీ రెసిడెంట్ అసోసియేషన్, వార్డు కౌన్సిలర్ లేదా ఇరుగుపొరుగు వారితో పంచుకోండి.",
+    shareViaWhatsApp: "వాట్సాప్‌లో పంచుకోండి",
+    copyLink: "స్టేటస్ లింక్ కాపీ చేయండి",
+    linkCopied: "ఫిర్యాదు స్థితి లింక్ క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది!"
   }
 };

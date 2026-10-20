@@ -159,7 +159,7 @@ const activeOTPs = new Map<string, string>();
 // Unified function to send system notification emails
 async function sendSystemEmail(to: string, subject: string, htmlContent: string): Promise<boolean> {
   const transporter = getMailTransporter();
-  const sender = process.env.GMAIL_USER || "Civic Water Support <noreply@civicwater.gov.in>";
+  const sender = process.env.GMAIL_USER || "Makkal Assistant <noreply@makkalassistant.gov.in>";
 
   console.log(`\n======================================================`);
   console.log(`📧 SYSTEM EMAIL LOGGED TO CONSOLE (TO: ${to})`);
@@ -176,7 +176,7 @@ async function sendSystemEmail(to: string, subject: string, htmlContent: string)
 
   try {
     await transporter.sendMail({
-      from: `Civic Water Desk <${process.env.GMAIL_USER}>`,
+      from: `Makkal Assistant Desk <${process.env.GMAIL_USER}>`,
       to,
       subject,
       html: htmlContent
@@ -424,11 +424,11 @@ app.post("/api/auth/send-otp", async (req: Request, res: Response) => {
   // If email is provided, let's send a beautiful Gmail OTP notification (officers)
   let emailSent = false;
   if (email) {
-    const subject = `[Civic Water Desk] OTP Verification Code: ${otp}`;
+    const subject = `[Makkal Assistant] OTP Verification Code: ${otp}`;
     const htmlBody = `
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 500px; margin: 0 auto; padding: 30px; border: 1px solid #e2e8f0; border-radius: 20px; background-color: #ffffff; color: #1e293b; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
         <div style="text-align: center; margin-bottom: 25px;">
-          <span style="font-size: 26px; font-weight: 800; color: #2563eb; letter-spacing: -0.5px;">💧 Civic Water Desk</span>
+          <span style="font-size: 26px; font-weight: 800; color: #2563eb; letter-spacing: -0.5px;">🏛️ Makkal Assistant</span>
         </div>
         <h2 style="font-size: 18px; font-weight: 700; text-align: center; color: #0f172a; margin-top: 0;">Portal Verification</h2>
         <p style="font-size: 13px; line-height: 1.6; color: #475569; text-align: center; margin-bottom: 20px;">
@@ -566,6 +566,17 @@ app.patch("/api/officials/:id", (req: Request, res: Response) => {
 app.get("/api/complaints", (req: Request, res: Response) => {
   const dbData = readDB();
   res.json(dbData.complaints);
+});
+
+// Get a single complaint by ID (for direct deep links & social shares)
+app.get("/api/complaints/:id", (req: Request, res: Response) => {
+  const { id } = req.params;
+  const dbData = readDB();
+  const complaint = dbData.complaints.find((c: any) => c.id === id);
+  if (!complaint) {
+    return res.status(404).json({ error: "Complaint not found" });
+  }
+  res.json(complaint);
 });
 
 // Submit a new complaint
@@ -1065,7 +1076,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Civic Water Assistant server running on http://localhost:${PORT}`);
+    console.log(`Makkal Assistant server running on http://localhost:${PORT}`);
   });
 }
 

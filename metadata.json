@@ -1,6 +1,6 @@
 {
-  "name": "Civic Water Assistant",
-  "description": "Voice-first, icon-guided water and civic complaint app with geo-consistent repair verification, automatic location matching, offline support, and local language support (Hindi, Tamil, Telugu).",
+  "name": "Makkal Assistant",
+  "description": "Voice-first, icon-guided civic grievance assistant with geo-consistent repair verification, automatic location matching, offline support, and multi-language support (Tamil, Telugu, Hindi, English).",
   "requestFramePermissions": ["camera", "geolocation"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
