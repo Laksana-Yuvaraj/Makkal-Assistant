@@ -1,0 +1,6 @@
+{
+  "name": "Civic Water Assistant",
+  "description": "Voice-first, icon-guided water and civic complaint app with geo-consistent repair verification, automatic location matching, offline support, and local language support (Hindi, Tamil, Telugu).",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
